@@ -1,0 +1,13 @@
+<span>
+  <a routerLinkActive="active" (click)="showModal = true">Edit</a>
+</span>
+<span>
+  <a routerLinkActive="active" (click)="onDelete()">Delete</a>
+</span>
+
+<app-modal (dismiss)="showModal = false" *ngIf="showModal">
+  <div modalTitle>Hello</div>
+  <div modalContent>
+    <app-user-form [user]="user" (userSubmitForm)="onSubmit($event)"></app-user-form>
+  </div>
+</app-modal>

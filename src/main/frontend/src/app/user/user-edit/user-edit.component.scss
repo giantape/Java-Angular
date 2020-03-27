@@ -1,0 +1,9 @@
+span {
+  a {
+    display: inline-block;
+    cursor: pointer;
+    &:first-child {
+      margin-right: 20px;
+    }
+  }
+}

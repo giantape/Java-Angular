@@ -1,0 +1,7 @@
+<button class="ui primary button inverted fluid" (click)="showModal = true">Neue Mitarbeiter anlegen</button>
+<app-modal *ngIf="showModal" (dismiss)="showModal = false">
+  <div modalTitle>Neue Mitarbeiter Erstellen</div>
+  <div modalContent>
+    <app-user-form [user]="user" (userSubmitForm)="onSubmit($event)"></app-user-form>
+  </div>
+</app-modal>

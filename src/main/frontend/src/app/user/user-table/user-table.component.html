@@ -1,0 +1,20 @@
+<table [ngClass]="className" class="ui table">
+  <thead>
+  <tr>
+    <th *ngFor="let header of headers">
+      {{ header.label }}
+    </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users">
+    <td>{{user.id}}</td>
+    <td>{{user.firstname}}</td>
+    <td>{{user.lastname}}</td>
+    <td>{{user.email}}</td>
+    <td>
+      <app-user-edit [user]="user"></app-user-edit>
+    </td>
+  </tr>
+  </tbody>
+</table>

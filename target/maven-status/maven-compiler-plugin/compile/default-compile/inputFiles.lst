@@ -1,0 +1,12 @@
+/Users/gesangarmadi/Project/Java/Java-Angular/src/main/java/com/unklick/repositories/UserRepository.java
+/Users/gesangarmadi/Project/Java/Java-Angular/src/main/java/com/unklick/repositories/repoImpl/UserRepositoryImpl.java
+/Users/gesangarmadi/Project/Java/Java-Angular/src/main/java/com/unklick/models/User.java
+/Users/gesangarmadi/Project/Java/Java-Angular/src/main/java/com/unklick/controllers/UserController.java
+/Users/gesangarmadi/Project/Java/Java-Angular/src/main/java/com/unklick/exception/GlobalExceptionHandler.java
+/Users/gesangarmadi/Project/Java/Java-Angular/src/main/java/com/unklick/AngularApplication.java
+/Users/gesangarmadi/Project/Java/Java-Angular/src/main/java/com/unklick/config/MvcConfiguration.java
+/Users/gesangarmadi/Project/Java/Java-Angular/src/main/java/com/unklick/exception/ResourceNotFoundException.java
+/Users/gesangarmadi/Project/Java/Java-Angular/src/main/java/com/unklick/exception/DetailError.java
+/Users/gesangarmadi/Project/Java/Java-Angular/src/main/java/com/unklick/services/UserService.java
+/Users/gesangarmadi/Project/Java/Java-Angular/src/main/java/com/unklick/config/DevCorsConfiguration.java
+/Users/gesangarmadi/Project/Java/Java-Angular/src/main/java/com/unklick/statusResponse/StatusResponse.java

@@ -2,13 +2,13 @@ package com.unklick.exception;
 
 import java.util.Date;
 
-public class GeneralError {
+public class DetailError {
 
     private Date timestamp;
     private String message;
     private String details;
 
-    public GeneralError(Date timestamp, String message, String details){
+    public DetailError(Date timestamp, String message, String details){
         this.timestamp = timestamp;
         this.message = message;
         this.details = details;

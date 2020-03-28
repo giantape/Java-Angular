@@ -1,0 +1,13 @@
+com/unklick/config/MvcConfiguration$1.class
+com/unklick/services/UserService.class
+com/unklick/exception/ResourceNotFoundException.class
+com/unklick/statusResponse/StatusResponse.class
+com/unklick/models/User.class
+com/unklick/repositories/UserRepository.class
+com/unklick/AngularApplication.class
+com/unklick/exception/GlobalExceptionHandler.class
+com/unklick/exception/DetailError.class
+com/unklick/config/DevCorsConfiguration.class
+com/unklick/repositories/repoImpl/UserRepositoryImpl.class
+com/unklick/controllers/UserController.class
+com/unklick/config/MvcConfiguration.class

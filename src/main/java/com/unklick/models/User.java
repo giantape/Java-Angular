@@ -1,35 +1,34 @@
 package com.unklick.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+//@Table(name = "users")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String name;
+    //@Column(name = "firstName", nullable = false)
+    private String firstname;
+    //@Column(name = "lastName", nullable = false)
+    private String lastname;
+    //@Column(name = "email", nullable = false)
     private String email;
 
     public User(){}
 
-    public User(Long id, String name, String email) {
+    public User(Long id, String firstname, String lastname, String email) {
         this.id = id;
-        this.name = name;
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.email = email;
     }
 
-    public User(String name, String email) {
-        this.name = name;
-        this.email = email;
+    public String getFirstname() {
+        return firstname;
     }
-
-    public String getName() {
-        return name;
-    }
+    public String getLastname() { return lastname; }
 
     public String getEmail() {
         return email;
@@ -39,15 +38,16 @@ public class User {
         return id;
     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void setFirstname(String firstname) { this.firstname = firstname; }
+    public void setLastname(String lastname) { this.lastname = lastname; }
+    public void setEmail(String email) { this.email = email; }
 
     @Override
     public String toString() {
-        return "User{" +
+        return "Users{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", firstname='" + firstname + '\'' +
+                ", lastname='" + lastname + '\'' +
                 ", email='" + email + '\'' +
                 '}';
     }

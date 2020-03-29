@@ -4,7 +4,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { UserRoutingModule } from './user-routing.module';
 import { UserFormComponent } from './user-form/user-form.component';
-import { UserShowComponent } from './user-show/user-show.component';
 import { UserIndexComponent } from './user-index/user-index.component';
 import { UserCreateComponent } from './user-create/user-create.component';
 import { UserListComponent } from './user-list/user-list.component';
@@ -16,7 +15,6 @@ import { UserEditComponent } from './user-edit/user-edit.component';
 @NgModule({
   declarations: [
     UserFormComponent,
-    UserShowComponent,
     UserIndexComponent,
     UserCreateComponent,
     UserListComponent,

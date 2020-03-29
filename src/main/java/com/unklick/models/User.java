@@ -3,17 +3,13 @@ package com.unklick.models;
 import javax.persistence.*;
 
 @Entity
-//@Table(name = "users")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    //@Column(name = "firstName", nullable = false)
     private String firstname;
-    //@Column(name = "lastName", nullable = false)
     private String lastname;
-    //@Column(name = "email", nullable = false)
     private String email;
 
     public User(){}

@@ -12,12 +12,12 @@ import { Router } from '@angular/router';
 export class UserEditComponent implements OnChanges {
   showModal = false;
   @Input() user: User;
+
   constructor(
     private userService: UserService,
-    private route: Router) { }
+    private router: Router) { }
 
   ngOnChanges(): void {
-    console.log(this.user);
     this.user = {
       ...this.user,
       firstname: this.user.firstname,
@@ -29,14 +29,15 @@ export class UserEditComponent implements OnChanges {
   onSubmit(user: User) {
     const update = _.extend(user, {id: this.user.id});
     this.userService.updateUser(this.user.id, update).subscribe(() => {
-      this.route.navigateByUrl('/users', { skipLocationChange: true });
+      this.router.navigateByUrl('/users');
       this.showModal = false;
     });
   }
 
   onDelete() {
     this.userService.deleteUser(this.user.id).subscribe(() => {
-      this.route.navigateByUrl('/users');
+      this.router.navigateByUrl('/users');
     });
   }
+
 }

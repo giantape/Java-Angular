@@ -10,7 +10,7 @@ export class UserTableComponent implements OnInit {
   @Input() users: User;
   @Input() headers = [];
   @Input() className = '';
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }

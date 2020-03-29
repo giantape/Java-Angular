@@ -2,15 +2,11 @@ package com.unklick.controllers;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import com.unklick.models.User;
-import com.unklick.repositories.UserRepository;
 import com.unklick.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 @CrossOrigin(origins = "http://localhost:4200", maxAge = 3600)
